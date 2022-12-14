@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>infotecs</title>
+    <link type="text/css" href="main.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <div class="container-left">
+        <div class="data-sorting-container">
+            <div class="sorting-title">Сортировать по:</div>
+            <label for="data-sorting"></label>
+            <select id="data-sorting" onchange="sortData()">
+                <option value="value01">Умолчанию</option>
+                <option value="value02">Имя А-Я</option>
+                <option value="value03">Имя Я-А</option>
+                <option value="value04">Фамилия А-Я</option>
+                <option value="value05">Фамилия Я-А</option>
+                <option value="value06">Описание А-Я</option>
+                <option value="value07">Описание Я-А</option>
+                <option value="value08">Цвет глаз А-Я</option>
+                <option value="value09">Цвет глаз Я-А</option>
+            </select>
+        </div>
+        <div class="show-columns-container">
+            <div>
+                <label for="show-firstName">Отображать имя</label>
+                <input checked type="checkbox" id="show-firstName" name="show-firstName"
+                       onclick="toggleFirstName()"/>
+            </div>
+            <div>
+                <label for="show-lastName">Отображать фамилию</label>
+                <input checked type="checkbox" id="show-lastName" name="show-lastName"
+                       onclick="toggleLastName()"/>
+            </div>
+            <div>
+                <label for="show-about">Отображать описание</label>
+                <input checked type="checkbox" id="show-about" name="show-about"
+                       onclick="toggleAbout()"/>
+            </div>
+            <div>
+                <label for="show-eye-color">Отображать цвет глаз</label>
+                <input checked type="checkbox" id="show-eye-color" name="show-eye-coloк"
+                       onclick="toggleEyeColor()"/>
+            </div>
+        </div>
+    </div>
+    <div class="container-center">
+        <div id="page-numbers" class="page-numbers"></div>
+        <table id="table"></table>
+    </div>
+    <div id="container-right" class="container-right"></div>
+</div>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
+
