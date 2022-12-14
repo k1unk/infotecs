@@ -1,112 +1,114 @@
 * {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
 html, body {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .container {
-  margin: auto;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
+    margin: auto;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .container-left {
-  max-width: 300px;
-  width: 25%;
-  padding-left: 10px;
-  padding-right: 5px;
+    max-width: 300px;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 5px;
 }
 
 .container-center {
-  width: 50%;
+    width: 50%;
 }
 
 .container-right {
-  max-width: 300px;
-  width: 25%;
-  padding-right: 10px;
-  padding-left: 5px;
-  margin-top: 50px;
+    max-width: 300px;
+    width: 25%;
+    padding-right: 10px;
+    padding-left: 5px;
+    margin-top: 50px;
 }
 
 td, textarea {
-  border: 1px solid black;
+    border: 1px solid black;
 }
 
 textarea {
-  resize: none;
-  min-height: 50px;
-  max-height: 200px;
-  width: 200px;
+    resize: none;
+    min-height: 50px;
+    max-height: 200px;
+    width: 200px;
 }
 
 tr {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .table-header {
-  cursor: default;
+    cursor: default;
 }
 
 td.column3 {
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
 }
 
 
 .hidden-column {
-  display: none;
+    display: none;
 }
+
 td.column3.hidden-column {
-  display: none;
+    display: none;
 }
 
 .container {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .show-columns-container {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 
 .container-right input {
-  width: 200px;
-  border: 1px solid black;
+    width: 200px;
+    border: 1px solid black;
 }
+
 .edit-value-item {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .page-numbers {
-  display: flex;
-  margin-top: 10px;
+    display: flex;
+    margin-top: 10px;
 }
 
 .page-number {
-  height: 30px;
-  width: 30px;
-  background-color: #cae8f6;
-  border-radius: 9px;
-  font-size: 20px;
-  margin-right: 10px;
-  cursor: pointer;
+    height: 30px;
+    width: 30px;
+    background-color: #cae8f6;
+    border-radius: 9px;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .page-number_active {
-  color: deepskyblue;
+    color: deepskyblue;
 }
